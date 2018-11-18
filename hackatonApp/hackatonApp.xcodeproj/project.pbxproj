@@ -16,6 +16,9 @@
 		570525D721A1E90F00A1A8EF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570525D621A1E90F00A1A8EF /* ProfileViewController.swift */; };
 		570525DC21A1F82900A1A8EF /* PointsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 570525DB21A1F82900A1A8EF /* PointsView.xib */; };
 		570525DE21A1F83700A1A8EF /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570525DD21A1F83700A1A8EF /* PointsView.swift */; };
+		570525E121A2084F00A1A8EF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570525E021A2084F00A1A8EF /* UIColorExtension.swift */; };
+		570525E421A20A5700A1A8EF /* OccurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570525E221A20A5700A1A8EF /* OccurrencyTableViewCell.swift */; };
+		570525E521A20A5700A1A8EF /* OccurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 570525E321A20A5700A1A8EF /* OccurrencyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		570525D621A1E90F00A1A8EF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		570525DB21A1F82900A1A8EF /* PointsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointsView.xib; sourceTree = "<group>"; };
 		570525DD21A1F83700A1A8EF /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		570525E021A2084F00A1A8EF /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		570525E221A20A5700A1A8EF /* OccurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		570525E321A20A5700A1A8EF /* OccurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OccurrencyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		570525BE21A1E33700A1A8EF /* hackatonApp */ = {
 			isa = PBXGroup;
 			children = (
+				570525DF21A2083A00A1A8EF /* Helpers */,
 				570525D821A1F7D100A1A8EF /* Components */,
 				570525D121A1E8AC00A1A8EF /* Controllers */,
 				570525BF21A1E33700A1A8EF /* AppDelegate.swift */,
@@ -88,8 +95,18 @@
 			children = (
 				570525DB21A1F82900A1A8EF /* PointsView.xib */,
 				570525DD21A1F83700A1A8EF /* PointsView.swift */,
+				570525E221A20A5700A1A8EF /* OccurrencyTableViewCell.swift */,
+				570525E321A20A5700A1A8EF /* OccurrencyTableViewCell.xib */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		570525DF21A2083A00A1A8EF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				570525E021A2084F00A1A8EF /* UIColorExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +169,7 @@
 			files = (
 				570525DC21A1F82900A1A8EF /* PointsView.xib in Resources */,
 				570525CA21A1E33900A1A8EF /* LaunchScreen.storyboard in Resources */,
+				570525E521A20A5700A1A8EF /* OccurrencyTableViewCell.xib in Resources */,
 				570525C721A1E33900A1A8EF /* Assets.xcassets in Resources */,
 				570525C521A1E33700A1A8EF /* Main.storyboard in Resources */,
 			);
@@ -168,7 +186,9 @@
 				570525C021A1E33700A1A8EF /* AppDelegate.swift in Sources */,
 				570525DE21A1F83700A1A8EF /* PointsView.swift in Sources */,
 				570525D721A1E90F00A1A8EF /* ProfileViewController.swift in Sources */,
+				570525E421A20A5700A1A8EF /* OccurrencyTableViewCell.swift in Sources */,
 				570525D321A1E8D600A1A8EF /* HistoryViewController.swift in Sources */,
+				570525E121A2084F00A1A8EF /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

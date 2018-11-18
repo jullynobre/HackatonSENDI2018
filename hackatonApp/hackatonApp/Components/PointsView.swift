@@ -16,6 +16,11 @@ class PointsView: UIView {
     override func draw(_ rect: CGRect) {
         // Drawing code
         self.allPointsView.layer.borderWidth = 2
+        self.allPointsView.layer.borderColor = UIColor.init(red: 0x00, green: 0x7A, blue: 0xFF).cgColor
+        
+        self.validPointsView.layer.borderWidth = 2
+        self.validPointsView.layer.borderColor = UIColor.init(red: 0x00, green: 0x7A, blue: 0xFF).cgColor
+        
         
         self.allPointsView.layer.cornerRadius = 5
         self.validPointsView.layer.cornerRadius = 5
