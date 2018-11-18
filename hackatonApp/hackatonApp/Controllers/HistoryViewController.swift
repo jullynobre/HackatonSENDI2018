@@ -10,10 +10,14 @@ import UIKit
 
 class HistoryViewController: UIViewController {
 
+    @IBOutlet weak var pointsView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let view = UINib(nibName: "PointsView", bundle: .main).instantiate(withOwner: nil, options: nil).first as! PointsView
+        view.frame = self.pointsView.bounds
+        self.pointsView.addSubview(view)
     }
     
 

@@ -14,6 +14,8 @@
 		570525D321A1E8D600A1A8EF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570525D221A1E8D600A1A8EF /* HistoryViewController.swift */; };
 		570525D521A1E8FA00A1A8EF /* OccurrenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570525D421A1E8FA00A1A8EF /* OccurrenceViewController.swift */; };
 		570525D721A1E90F00A1A8EF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570525D621A1E90F00A1A8EF /* ProfileViewController.swift */; };
+		570525DC21A1F82900A1A8EF /* PointsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 570525DB21A1F82900A1A8EF /* PointsView.xib */; };
+		570525DE21A1F83700A1A8EF /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570525DD21A1F83700A1A8EF /* PointsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		570525D221A1E8D600A1A8EF /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		570525D421A1E8FA00A1A8EF /* OccurrenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccurrenceViewController.swift; sourceTree = "<group>"; };
 		570525D621A1E90F00A1A8EF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		570525DB21A1F82900A1A8EF /* PointsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointsView.xib; sourceTree = "<group>"; };
+		570525DD21A1F83700A1A8EF /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		570525BE21A1E33700A1A8EF /* hackatonApp */ = {
 			isa = PBXGroup;
 			children = (
+				570525D821A1F7D100A1A8EF /* Components */,
 				570525D121A1E8AC00A1A8EF /* Controllers */,
 				570525BF21A1E33700A1A8EF /* AppDelegate.swift */,
 				570525C321A1E33700A1A8EF /* Main.storyboard */,
@@ -76,6 +81,15 @@
 				570525D621A1E90F00A1A8EF /* ProfileViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		570525D821A1F7D100A1A8EF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				570525DB21A1F82900A1A8EF /* PointsView.xib */,
+				570525DD21A1F83700A1A8EF /* PointsView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570525DC21A1F82900A1A8EF /* PointsView.xib in Resources */,
 				570525CA21A1E33900A1A8EF /* LaunchScreen.storyboard in Resources */,
 				570525C721A1E33900A1A8EF /* Assets.xcassets in Resources */,
 				570525C521A1E33700A1A8EF /* Main.storyboard in Resources */,
@@ -151,6 +166,7 @@
 			files = (
 				570525D521A1E8FA00A1A8EF /* OccurrenceViewController.swift in Sources */,
 				570525C021A1E33700A1A8EF /* AppDelegate.swift in Sources */,
+				570525DE21A1F83700A1A8EF /* PointsView.swift in Sources */,
 				570525D721A1E90F00A1A8EF /* ProfileViewController.swift in Sources */,
 				570525D321A1E8D600A1A8EF /* HistoryViewController.swift in Sources */,
 			);
