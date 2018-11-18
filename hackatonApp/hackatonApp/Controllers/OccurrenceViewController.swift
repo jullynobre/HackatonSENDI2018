@@ -10,13 +10,34 @@ import UIKit
 
 class OccurrenceViewController: UIViewController {
 
+    @IBOutlet weak var postImageView: UIImageView!
+    @IBOutlet weak var editImageButton: UIButton!
+    
+    @IBOutlet weak var coordinatesLabel: UILabel!
+    @IBOutlet weak var coordinatesTextField: UITextField!
+    
+    @IBOutlet weak var postLabel: UILabel!
+    @IBOutlet weak var postTextField: UITextField!
+    
+    @IBOutlet weak var saveButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        formatInterface()
     }
-    
-
+    func formatInterface() {
+        //ImageView
+        self.postImageView.layer.cornerRadius = 80
+        self.postImageView.backgroundColor = UIColor.groupTableViewBackground
+        //Buttons
+        self.editImageButton.layer.cornerRadius = 23
+        self.saveButton.layer.cornerRadius = 20
+        //TextFields
+        self.postTextField.delegate = self
+        self.postTextField.borderStyle = .roundedRect
+        self.coordinatesTextField.borderStyle = .roundedRect
+    }
     /*
     // MARK: - Navigation
 
@@ -27,4 +48,13 @@ class OccurrenceViewController: UIViewController {
     }
     */
 
+    @IBAction func didTapEditImageButton(_ sender: Any) {
+        
+    }
+}
+extension OccurrenceViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
