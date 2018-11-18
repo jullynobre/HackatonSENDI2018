@@ -32,6 +32,7 @@ class OccurrenceViewController: UIViewController {
         //ImageView
         self.postImageView.layer.cornerRadius = 80
         self.postImageView.backgroundColor = UIColor.groupTableViewBackground
+        self.postImageView.clipsToBounds = true
         //Buttons
         self.editImageButton.layer.cornerRadius = 23
         self.saveButton.layer.cornerRadius = 20
