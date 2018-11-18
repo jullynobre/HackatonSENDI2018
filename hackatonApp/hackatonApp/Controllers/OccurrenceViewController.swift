@@ -21,6 +21,8 @@ class OccurrenceViewController: UIViewController {
     
     @IBOutlet weak var saveButton: UIButton!
     
+    var imagePicker: UIImagePickerController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,20 +40,22 @@ class OccurrenceViewController: UIViewController {
         self.postTextField.borderStyle = .roundedRect
         self.coordinatesTextField.borderStyle = .roundedRect
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func didTapEditImageButton(_ sender: Any) {
-        
+        self.imagePicker = UIImagePickerController()
+        self.imagePicker.delegate = self
+        self.imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
     }
 }
+
+extension OccurrenceViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        self.imagePicker.dismiss(animated: true, completion: nil)
+        self.postImageView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+    }
+}
+
 extension OccurrenceViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
