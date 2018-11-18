@@ -38,6 +38,12 @@
                                 <rect key="frame" x="112" y="89" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7l-2R-e5u">
+                                <rect key="frame" x="234" y="210" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button" image="pencil-blue"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9Fl-JF-aUR"/>
@@ -46,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ggd-dH-YFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5550" y="127"/>
+            <point key="canvasLocation" x="5549.6000000000004" y="126.38680659670166"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="vA0-VT-3nH">
@@ -144,6 +150,7 @@
     <resources>
         <image name="camera-blue" width="30" height="26"/>
         <image name="history-blue" width="30" height="23"/>
+        <image name="pencil-blue" width="300" height="300"/>
         <image name="user-gray" width="30" height="28"/>
     </resources>
 </document>
