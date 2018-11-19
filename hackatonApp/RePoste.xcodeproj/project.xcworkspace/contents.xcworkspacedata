@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:hackatonApp.xcodeproj">
+      location = "self:/Users/diuli/Documents/HackatonSENDI2018/hackatonApp/RePoste.xcodeproj">
    </FileRef>
 </Workspace>

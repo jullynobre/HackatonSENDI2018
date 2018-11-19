@@ -144,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 570525B721A1E33700A1A8EF /* Build configuration list for PBXProject "hackatonApp" */;
+			buildConfigurationList = 570525B721A1E33700A1A8EF /* Build configuration list for PBXProject "RePoste" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -369,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		570525B721A1E33700A1A8EF /* Build configuration list for PBXProject "hackatonApp" */ = {
+		570525B721A1E33700A1A8EF /* Build configuration list for PBXProject "RePoste" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				570525CC21A1E33900A1A8EF /* Debug */,
