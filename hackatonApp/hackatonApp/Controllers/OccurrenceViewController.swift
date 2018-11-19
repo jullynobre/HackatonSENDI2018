@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class OccurrenceViewController: UIViewController {
 
@@ -23,10 +24,22 @@ class OccurrenceViewController: UIViewController {
     
     var imagePicker: UIImagePickerController!
     
+    var locationManager = CLLocationManager()
+    var currentLocation: CLLocationCoordinate2D?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         formatInterface()
+        
+        self.locationManager.delegate = self
+        
+        startUpdatingLocation()
+    }
+    func startUpdatingLocation() {
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
     func formatInterface() {
         //ImageView
@@ -54,6 +67,10 @@ extension OccurrenceViewController: UIImagePickerControllerDelegate, UINavigatio
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         self.imagePicker.dismiss(animated: true, completion: nil)
         self.postImageView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        
+        if let location = self.currentLocation {
+            self.coordinatesTextField.text =  "\(location.latitude), \(location.longitude)"
+        }
     }
 }
 
@@ -61,5 +78,11 @@ extension OccurrenceViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+}
+
+extension OccurrenceViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.currentLocation = locations.last!.coordinate
     }
 }

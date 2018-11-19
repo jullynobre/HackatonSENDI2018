@@ -22,7 +22,7 @@ class HistoryViewController: UIViewController {
         self.loadPointsView()
         
         self.pointsTableView.register(UINib.init(nibName: "OccurrencyTableViewCell", bundle: nil), forCellReuseIdentifier: self.cellItendifier)
-        self.pointsTableView.rowHeight = 100
+        self.pointsTableView.rowHeight = 75
         self.pointsTableView.delegate = self
         self.pointsTableView.dataSource = self
     }
@@ -39,7 +39,7 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
