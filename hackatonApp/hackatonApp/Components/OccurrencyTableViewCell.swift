@@ -10,9 +10,15 @@ import UIKit
 
 class OccurrencyTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var postImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        self.postImageView.layer.cornerRadius = 25
+        self.postImageView.layer.masksToBounds = true
+        self.postImageView.image = UIImage.init(named: "bg")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
