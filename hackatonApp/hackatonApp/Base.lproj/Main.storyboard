@@ -34,6 +34,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Histórico" largeTitleDisplayMode="always" id="spE-Pn-s7o"/>
                     <connections>
+                        <outlet property="pointsTableView" destination="DCe-GM-vg7" id="0KK-5r-Ivi"/>
                         <outlet property="pointsView" destination="hT7-AE-Uys" id="7Bq-cu-02z"/>
                     </connections>
                 </viewController>
